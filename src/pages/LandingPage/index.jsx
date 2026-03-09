@@ -3,6 +3,9 @@ import phone from "../../assets/home/phone.svg";
 import bottom from "../../assets/home/home_bottom.svg";
 import About from "./about.jsx";
 import Deteksi from "./deteksi.jsx";
+import Berita from './berita.jsx'
+import Kontak from './kontak.jsx'
+
 import { motion } from "framer-motion";
 
 export default function Index() {
@@ -57,6 +60,14 @@ export default function Index() {
 
       {/* Deteksi Section */}
       <Deteksi />
+
+      {/* Berita Section */}
+      <Berita />
+
+      {/* Kontak Section */}
+      <Kontak />
+
+      
     </section>
   );
 }
