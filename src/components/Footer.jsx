@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[#2F9E73] text-white rounded-t-[60px] px-12 pt-14 pb-6">
       
       {/* Top Section */}
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-2 gap-10 mr-1">
 
         {/* Left */}
         <div className="flex flex-col gap-6">
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
 
         {/* Right */}
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid grid-cols-4">
 
           <div>
             <h2 className="font-semibold mb-3">Navigasi</h2>

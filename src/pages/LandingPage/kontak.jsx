@@ -8,7 +8,7 @@ export default function Kontak() {
       {/* LEFT */}
       <div className="flex flex-col justify-between p-16">
 
-        <h1 className="text-5xl font-semibold leading-tight max-w-md">
+        <h1 className="text-5xl font-semibold leading-tight max-w-md text-[#232323]">
           Punya pertanyaan? <br />
           coba tanyakan <br />
           melalui kontak <br />
@@ -39,7 +39,7 @@ export default function Kontak() {
           <div className="grid grid-cols-2 gap-6">
 
             <div>
-              <label className="block mb-2 font-medium">Nama</label>
+              <label className="block mb-2 font-medium text-[#232323]">Nama</label>
               <input
                 type="text"
                 placeholder="Tulis nama kamu disini"
@@ -48,7 +48,7 @@ export default function Kontak() {
             </div>
 
             <div>
-              <label className="block mb-2 font-medium">Email</label>
+              <label className="block mb-2 font-medium text-[#232323]">Email</label>
               <input
                 type="email"
                 placeholder="Tulis email kamu disini"
@@ -60,7 +60,7 @@ export default function Kontak() {
 
           {/* pesan */}
           <div>
-            <label className="block mb-2 font-medium">Pesan</label>
+            <label className="block mb-2 font-medium text-[#232323]">Pesan</label>
             <textarea
               rows="6"
               placeholder="Tulis Pesan mu disini ya!"

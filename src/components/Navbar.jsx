@@ -1,4 +1,5 @@
 import logo from "../assets/rudar logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,11 @@ const Navbar = () => {
         <ul className="flex gap-6 font-medium text-[#12462F]">
           <li className="cursor-pointer hover:text-[#30A572]">Tentang Kami</li>
           <li className="cursor-pointer hover:text-[#30A572]">Deteksi Situs</li>
-          <li className="cursor-pointer hover:text-[#30A572]">Pelaporan</li>
+          <li>
+            <Link to="/pelaporan" className="hover:text-[#30A572]">
+              Pelaporan
+            </Link>
+          </li>
           <li className="cursor-pointer hover:text-[#30A572]">Artikel</li>
           <li className="cursor-pointer hover:text-[#30A572]">Kontak</li>
         </ul>
