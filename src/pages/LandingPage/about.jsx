@@ -1,6 +1,6 @@
 import aboutkanan from "../../assets/home/about-kanan.svg";
 import aboutkiri from "../../assets/home/about-kiri.svg";
-import { motion } from "framer-motion"; // import framer-motion
+import { motion } from "framer-motion"; 
 
 export default function About() {
   return (

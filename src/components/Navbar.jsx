@@ -14,7 +14,11 @@ const Navbar = () => {
       <div className="bg-[#F0F9E8] rounded-[30px] px-6 py-3">
         <ul className="flex gap-6 font-medium text-[#12462F]">
           <li className="cursor-pointer hover:text-[#30A572]">Tentang Kami</li>
-          <li className="cursor-pointer hover:text-[#30A572]">Deteksi Situs</li>
+             <li>
+            <Link to="/detail-deteksi" className="hover:text-[#30A572]">
+              Deteksi Situs
+            </Link>
+          </li>
           <li>
             <Link to="/pelaporan" className="hover:text-[#30A572]">
               Pelaporan

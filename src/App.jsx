@@ -7,6 +7,8 @@ import Pelaporan from "./pages/Features/pelaporan.jsx";
 import Artikel from "./pages/LandingPage/berita.jsx";
 import Kontak from "./pages/LandingPage/kontak.jsx";
 import Footer from "./components/Footer.jsx";
+import Situs from "./pages/Features/situs.jsx";
+import Hasil from "./pages/Features/result-situs.jsx";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/pelaporan" element={<Pelaporan />} />
         <Route path="/artikel" element={<Artikel />} />
         <Route path="/kontak" element={<Kontak />} />
+        <Route path="/detail-deteksi" element={<Situs />} />
+        <Route path="/hasil" element={<Hasil />} />
       </Routes>
 
       <Footer/>

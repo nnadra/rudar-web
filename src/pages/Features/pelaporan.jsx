@@ -30,7 +30,7 @@ export default function Pelaporan() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#F5F5F5] flex items-center justify-center px-6">
+    <div className="w-full min-h-screen flex items-center justify-center px-6">
 
       <div className="w-full max-w-3xl">
 
