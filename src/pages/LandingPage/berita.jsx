@@ -64,7 +64,7 @@ useEffect(() => {
   ]
 
   return (
-    <section className="py-24 overflow-hidden">
+    <section className="py-24 overflow-hidden" id="artikel">
 
       {/* HEADER */}
       <div className="text-center mb-16">

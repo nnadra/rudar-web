@@ -25,14 +25,14 @@ export default function Hasil() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center py-16">
+    <div className="min-h-screen flex flex-col items-center py-16 px-4 md:px-8 lg:px-16 mt-15">
 
-      <h1 className="text-4xl font-bold mb-10">
+      <h1 className="text-4xl font-bold mb-10 text-center">
         Hasil Deteksi Situs
       </h1>
 
       {/* Warning */}
-      <div className="bg-red-100 text-red-600 p-6 rounded-xl w-187.5 mb-6">
+      <div className="bg-red-100 text-red-600 p-6 rounded-xl w-full md:w-187.5 mb-6">
         <h3 className="font-bold mb-2">⚠️ Peringatan Penting</h3>
         <p className="text-sm">
           Hasil deteksi ini bersifat indikatif berdasarkan sistem analisis otomatis.
@@ -42,9 +42,9 @@ export default function Hasil() {
       </div>
 
       {/* Info Situs */}
-      <div className="bg-gray-100 p-6 rounded-xl w-187.5 mb-8 text-gray-700">
+      <div className="bg-gray-100 p-6 rounded-xl w-full md:w-187.5 mb-8 text-gray-700">
 
-        <p className="mb-3">🔗 {url}</p>
+        <p className="mb-3 break-words">🔗 {url}</p>
 
         <p className="mb-2">
           <strong>Status :</strong> Perlu Kewaspadaan
@@ -63,7 +63,7 @@ export default function Hasil() {
       </div>
 
       {/* Diagram */}
-      <div className="bg-[#DDE6D5] p-6 rounded-xl w-187.5 mb-10">
+      <div className="bg-[#DDE6D5] p-6 rounded-xl w-full md:w-187.5 mb-10">
 
         <ResponsiveContainer width="100%" height={250}>
           <BarChart data={data}>
@@ -81,15 +81,15 @@ export default function Hasil() {
       </div>
 
       {/* Button */}
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-auto">
 
-        <button className="bg-green-600 text-white px-8 py-3 rounded-lg">
+        <button className="bg-[#30A572] text-white px-8 py-3 rounded-lg w-full md:w-auto">
           Laporkan Situs
         </button>
 
         <button
           onClick={() => navigate("/")}
-          className="bg-[#DDE6D5] text-green-700 px-8 py-3 rounded-lg"
+          className="bg-[#DDE6D5] text-green-700 px-8 py-3 rounded-lg w-full md:w-auto"
         >
           Kembali
         </button>

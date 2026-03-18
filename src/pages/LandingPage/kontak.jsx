@@ -3,7 +3,7 @@ import { Youtube, Facebook, Instagram, Mail } from "lucide-react";
 
 export default function Kontak() {
   return (
-    <section className="grid md:grid-cols-2 min-h-screen">
+    <section className="grid md:grid-cols-2 min-h-screen" id="kontak">
 
       {/* LEFT */}
       <div className="flex flex-col justify-between p-16">
