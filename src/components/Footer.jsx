@@ -17,17 +17,17 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div className="flex gap-4 flex-wrap max-w-[190px]">
-            <div className="border border-white rounded-full p-3">
+         <div className="grid grid-cols-4 gap-4 w-fit">
+            <div className="border border-white rounded-full w-10 h-10 flex items-center justify-center">
               <Youtube size={18} />
             </div>
-            <div className="border border-white rounded-full p-3">
+            <div className="border border-white rounded-full w-10 h-10 flex items-center justify-center">
               <Facebook size={18} />
             </div>
-            <div className="border border-white rounded-full p-3">
+            <div className="border border-white rounded-full w-10 h-10 flex items-center justify-center">
               <Instagram size={18} />
             </div>
-            <div className="border border-white rounded-full p-3">
+            <div className="border border-white rounded-full w-10 h-10 flex items-center justify-center">
               <Mail size={18} />
             </div>
           </div>
