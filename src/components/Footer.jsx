@@ -4,20 +4,20 @@ import rudarLogo from '../assets/logo-white-rudar.svg';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2F9E73] text-white rounded-t-[60px] px-12 pt-14 pb-6">
+    <footer className="bg-[#2F9E73] text-white rounded-t-[40px] md:rounded-t-[60px] px-6 md:px-12 pt-10 md:pt-14 pb-6">
       
       {/* Top Section */}
       <div className="grid grid-cols-2 gap-10 mr-1">
 
         {/* Left */}
-        <div className="flex flex-col gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex items-center gap-3">
             <img src={rudarLogo} alt="logo" className="w-12" />
             <h2 className="text-xl ">uang Sadar</h2>
           </div>
 
           {/* Social Media */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap max-w-[190px]">
             <div className="border border-white rounded-full p-3">
               <Youtube size={18} />
             </div>
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
 
         {/* Right */}
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
           <div>
             <h2 className="font-semibold mb-3">Navigasi</h2>
@@ -64,7 +64,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom */}
-      <div className="flex justify-between items-center mt-12 text-sm">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-12 text-sm gap-4 text-center md:text-left">
         <p>© Copyright 2026 - Ruang Sadar</p>
 
         <div className="flex gap-6">

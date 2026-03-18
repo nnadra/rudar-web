@@ -13,20 +13,26 @@ import Hasil from "./pages/Features/result-situs.jsx";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <div className="flex flex-col min-h-screen">
+        
+        <Navbar />
 
-      <Routes>
-        <Route path="*" element={<Home />} />
-        <Route path="/about-us" element={<About />} />
-        <Route path="/deteksi-situs" element={<Deteksi />} />
-        <Route path="/pelaporan" element={<Pelaporan />} />
-        <Route path="/artikel" element={<Artikel />} />
-        <Route path="/kontak" element={<Kontak />} />
-        <Route path="/detail-deteksi" element={<Situs />} />
-        <Route path="/hasil" element={<Hasil />} />
-      </Routes>
+        <main className="flex-1">
+          <Routes>
+            <Route path="*" element={<Home />} />
+            <Route path="/about-us" element={<About />} />
+            <Route path="/deteksi-situs" element={<Deteksi />} />
+            <Route path="/pelaporan" element={<Pelaporan />} />
+            <Route path="/artikel" element={<Artikel />} />
+            <Route path="/kontak" element={<Kontak />} />
+            <Route path="/detail-deteksi" element={<Situs />} />
+            <Route path="/hasil" element={<Hasil />} />
+          </Routes>
+        </main>
 
-      <Footer/>
+        <Footer />
+
+      </div>
     </BrowserRouter>
   );
 }
