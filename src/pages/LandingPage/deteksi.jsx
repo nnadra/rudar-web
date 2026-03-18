@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import deteksikanan from "../../assets/home/deteksi-kanan.svg";
 
+
 export default function Deteksi() {
     return (
         <section className="px-6 md:px-12 py-16 md:py-20">

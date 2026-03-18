@@ -31,19 +31,18 @@ export default function Pelaporan() {
 
   return (
     <div className="w-full min-h-screen flex items-center justify-center px-6">
-
-      <div className="w-full max-w-3xl">
+      <div className="w-full max-w-lg md:max-w-3xl">
 
         {/* SCREEN FORM */}
         {!submitted && (
           <div className="animate-fade">
-            <h1 className="text-3xl font-bold text-center mb-10">
+            <h1 className="text-2xl md:text-3xl font-bold text-center mb-10">
               Pelaporan Ancaman digital
             </h1>
 
             <form onSubmit={handleSubmit} className="space-y-6">
 
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2">
                 <div>
                   <label className="text-sm">Nama Pelapor</label>
                   <input
@@ -87,7 +86,7 @@ export default function Pelaporan() {
                       type="button"
                       key={item}
                       onClick={() => setKategori(item)}
-                      className={`px-4 py-2 rounded-full border transition
+                      className={`px-4 py-2 rounded-full border transition text-sm md:text-base
                       ${
                         kategori === item
                           ? "bg-green-600 text-white border-green-600"
@@ -101,20 +100,21 @@ export default function Pelaporan() {
               </div>
 
               {/* upload */}
-              <div>
-                <label className="text-sm">Bukti Gambar</label>
+               <div>
+            <label className="text-sm">Bukti Gambar</label>
 
-                <label className="mt-3 flex flex-col items-center justify-center border-2 border-dashed bg-[#E6EDE1] rounded-xl h-40 cursor-pointer">
-                  <Upload size={24} />
-                  <p className="text-sm mt-2">Upload</p>
-                  <p className="text-xs text-gray-500">
-                    Pilih file yang ingin di upload
-                  </p>
-                  <input type="file" className="hidden" />
-                </label>
-              </div>
+            <label className="mt-3 flex flex-col items-center justify-center border-2 border-dashed border-[#C7D2C0] bg-[#E6EDE1] rounded-xl h-32 md:h-40 cursor-pointer">
+              <Upload size={24} className="text-green-600" />
+              <span className="text-sm mt-2 text-gray-700">
+                Pilih file yang ingin di upload
+              </span>
+              <span className="text-xs text-gray-500">Max 500 MB</span>
 
-              <button className="w-full py-4 bg-green-600 text-white rounded-xl hover:bg-green-700 transition">
+              <input type="file" className="hidden" />
+            </label>
+          </div>
+
+              <button className="w-full py-4 bg-[#30A572] text-white rounded-xl hover:bg-green-700 transition">
                 Kirim Pesan
               </button>
             </form>
@@ -131,11 +131,11 @@ export default function Pelaporan() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mt-6">
+            <h2 className="text-2xl md:text-3xl font-bold mt-6">
               Laporan Berhasil DiKirim!
             </h2>
 
-            <div className="mt-8 border-2 border-green-600 rounded-xl p-6 flex justify-between items-center bg-[#E6EDE1]">
+            <div className="mt-8 border-2 border-green-600 rounded-xl p-6 flex flex-col md:flex-row gap-4 md:justify-between md:items-center bg-[#E6EDE1]">
               <div className="text-left">
                 <p className="text-sm">Nomor Laporan:</p>
                 <h3 className="font-bold text-lg">{reportId}</h3>
@@ -146,7 +146,7 @@ export default function Pelaporan() {
 
               <button
                 onClick={copyId}
-                className="bg-green-600 p-3 rounded-lg text-white"
+                className="bg-[#298B61] p-3 rounded-lg text-white"
               >
                 <Copy size={18}/>
               </button>
